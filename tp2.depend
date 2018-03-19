@@ -1778,8 +1778,9 @@
 	"MyFrame.h"
 	"enumeration.cpp"
 
-1521469496 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyFrame.h
+1521477715 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyFrame.h
 	"MyPanel.h"
+	"MyApp.h"
 
 1521469517 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyPanel.h
 	"MyImage.h"
@@ -1792,10 +1793,20 @@
 	"MyRotateDialog.h"
 	"MyThresholdDialog.h"
 
-1521472549 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/FrameOutil.cpp
+1521477580 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/FrameOutil.cpp
 	"FrameOutil.h"
 
-1521472530 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/FrameOutil.h
+1521476812 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/FrameOutil.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+	"MyApp.h"
+
+1521477575 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyApp.cpp
+	"MyApp.h"
+	"MyFrame.h"
+	"FrameOutil.h"
+
+1521468941 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyApp.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 

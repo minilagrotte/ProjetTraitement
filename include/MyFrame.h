@@ -2,12 +2,13 @@
 #define MYFRAME_H
 
 #include "MyPanel.h"
+#include "MyApp.h"
 
 
 class MyFrame: public wxFrame
 {
 public:
-	MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
+	MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,MyApp* ap);
 private:
 	void OnHello(wxCommandEvent& event);
 	void OnExit(wxCommandEvent& event);
@@ -21,6 +22,7 @@ private:
 
     MyPanel* m_panel;
     clock_t t;
+    MyApp* app;
 };
 
 #endif // MYFRAME_H

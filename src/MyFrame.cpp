@@ -1,9 +1,10 @@
 #include "MyFrame.h"
 #include "enumeration.cpp"
+#include "MyApp.h"
 
 /////////////////Constructeur ////////////////////////
-MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
-: wxFrame(NULL, wxID_ANY, title, pos, size){
+MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,MyApp* ap)
+: wxFrame(NULL, wxID_ANY, title, pos, size),app(ap){
     m_panel = new MyPanel(this);
 
     Center();
@@ -151,7 +152,7 @@ void MyFrame::OnOpenImage(wxCommandEvent& event){
 }
 
 void MyFrame::OnOpenImageDefault(wxCommandEvent& event){
-    m_panel->OpenImage(wxT("/users/info/etu-s4/rueth/M4105C/tp4/default.jpg"));
+    m_panel->OpenImage(wxT("./default.jpg"));
 }
 
 void MyFrame::OnSave(wxCommandEvent& event)
