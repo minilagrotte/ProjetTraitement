@@ -103,6 +103,9 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,M
 	//this->SetStatusBar(stat);
 
 	CreateStatusBar();
+
+    Bind(wxEVT_CLOSE_WINDOW,&MyFrame::OnClose, this);
+
 }
 
 void MyFrame::OnHello(wxCommandEvent& event)
@@ -222,3 +225,18 @@ void MyFrame::OnProcess(wxCommandEvent& event){
         }
     }
 }
+void MyFrame::OnClose(wxCloseEvent& event)
+{
+    if (event.CanVeto())
+    {
+        if ( wxMessageBox("Voulez vous vraiment quitter ?",
+                          "Confirmer :",
+                          wxICON_QUESTION | wxYES_NO) == wxYES )
+        {
+            app->Exit();
+        }
+    }
+    //Destroy();  // you may also do:  event.Skip();
+                // since the default event handler does call Destroy(), too
+}
+

@@ -19,10 +19,12 @@ private:
     void OnOpenImageDefault(wxCommandEvent& event);
     void OnSave(wxCommandEvent& event);
     void OnProcess(wxCommandEvent& event);
+    void OnClose(wxCloseEvent& event);
 
     MyPanel* m_panel;
     clock_t t;
     MyApp* app;
 };
+
 
 #endif // MYFRAME_H
