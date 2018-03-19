@@ -1748,6 +1748,8 @@
 	"MyRotateDialog.h"
 	"MyThresholdDialog.h"
 
+1521468425 D
+
 1521471533 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
 
 1521471533 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyApp.cpp
@@ -1765,9 +1767,19 @@
 	"MyImage.h"
 
 1521471533 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyImage.h
+
+1521468425 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyImage.cpp
+	"MyImage.h"
+
+1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyImage.h
+
+1521468425 686d4472c717d747d4b8bb7595236ad8e2f8e
 	<wx/wxprec.h>
 	<wx/wx.h>
 	<stdlib.h>
+	<wx/radiobox.h>
+	<wx/button.h>
+	<wx/dialog.h>
 
 1521471533 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
@@ -1781,9 +1793,13 @@
 1521471533 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
 
 1521471533 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyRotateDialog.h
-	<wx/radiobox.h>
-	<wx/button.h>
-	<wx/dialog.h>
+
+1521468425 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyRotateDialog.cpp
+	"MyRotateDialog.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyRotateDialog.h
 
 1521471533 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyThresholdDialog.h
 	<wx/wx.h>
@@ -1795,4 +1811,16 @@
 
 1521471533 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyThresholdDialog.cpp
 	"MyThresholdDialog.h"
+
+1521471533 ldDialog.h"
+
+1521468425 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyThresholdDialog.cpp
+	"MyThresholdDialog.h"
+
+1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyThresholdDialog.h
+	<wx/wx.h>
+
+1521471614 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyFrame.cpp
+	"MyFrame.h"
+	"enumeration.cpp"
 

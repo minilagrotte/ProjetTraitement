@@ -126,13 +126,6 @@ void MyPanel::OnHistogramme(){
     Refresh();
 }
 
-
-
-
-
-
-
-
 bool MyPanel::isImage(){
     return m_image != nullptr;
 }
