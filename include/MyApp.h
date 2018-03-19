@@ -9,6 +9,9 @@ class MyApp: public wxApp
 {
 public:
 	virtual bool OnInit();
+
+	MyFrame *frame;
+	FrameOutil* frameOutil;
 };
 
 
