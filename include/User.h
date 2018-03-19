@@ -1,6 +1,6 @@
 #ifndef USER_H
 #define USER_H
-
+#include <wx/colour.h>
 
 class User
 {
@@ -8,16 +8,16 @@ class User
         User();
         virtual ~User();
 
-        inline int getSizeBrush(){return brushSize};
-        inline wxColor getColor(){return color};
+        inline int getSizeBrush();
+        inline wxColor* getColor();
 
-        void setSizeBrush(int _size){this->brushSize = _size};
-        void setColor(wxColor _color){this->color = _color};
+        void setSizeBrush(int _size);
+        void setColor(wxColor* _color);
 
     protected:
 
     private:
-        wxColor color;
+        wxColor* color;
         int brushSize;
 };
 

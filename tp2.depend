@@ -1752,9 +1752,10 @@
 
 1521471533 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
 
-1521471533 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyApp.cpp
+1521472925 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyApp.cpp
 	"MyApp.h"
 	"MyFrame.h"
+	"FrameOutil.h"
 
 1521471533 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyApp.h
 	<wx/wxprec.h>
@@ -1784,7 +1785,7 @@
 1521471533 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
 
-1521471533 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
+1521472866 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
 	"MyPanel.h"
 	"enumeration.cpp"
 	"MyRotateDialog.h"
@@ -1823,4 +1824,42 @@
 1521471614 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyFrame.cpp
 	"MyFrame.h"
 	"enumeration.cpp"
+
+1521471614 on.cpp"
+
+1521469462 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/enumeration.cpp
+
+1521469793 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyFrame.cpp
+	"MyFrame.h"
+	"enumeration.cpp"
+
+1521469496 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyFrame.h
+	"MyPanel.h"
+
+1521469517 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyPanel.h
+	"MyImage.h"
+
+1521469462 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/enumeration.cpp
+
+1521469926 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyPanel.cpp
+	"MyPanel.h"
+	"enumeration.cpp"
+	"MyRotateDialog.h"
+	"MyThresholdDialog.h"
+
+1521472549 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/FrameOutil.cpp
+	"FrameOutil.h"
+
+1521472530 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/FrameOutil.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+
+1521472530 dd88633ac91c91be9d371cc1c29ca3d3f994e
+
+1521472925 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameOutil.cpp
+	"FrameOutil.h"
+
+1521472925 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/FrameOutil.h
+	<wx/wxprec.h>
+	<wx/wx.h>
 

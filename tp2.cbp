@@ -39,13 +39,21 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
-		<Unit filename="hello_world.cpp" />
+		<Unit filename="include/MyApp.h" />
+		<Unit filename="include/MyFrame.h" />
 		<Unit filename="include/MyImage.h" />
+		<Unit filename="include/MyPanel.h" />
 		<Unit filename="include/MyRotateDialog.h" />
 		<Unit filename="include/MyThresholdDialog.h" />
+		<Unit filename="include/User.h" />
+		<Unit filename="src/MyApp.cpp" />
+		<Unit filename="src/MyFrame.cpp" />
 		<Unit filename="src/MyImage.cpp" />
+		<Unit filename="src/MyPanel.cpp" />
 		<Unit filename="src/MyRotateDialog.cpp" />
 		<Unit filename="src/MyThresholdDialog.cpp" />
+		<Unit filename="src/User.cpp" />
+		<Unit filename="src/enumeration.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
