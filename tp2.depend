@@ -1748,3 +1748,27 @@
 	"MyRotateDialog.h"
 	"MyThresholdDialog.h"
 
+1521468425 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyImage.cpp
+	"MyImage.h"
+
+1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyImage.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+	<stdlib.h>
+
+1521468425 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyRotateDialog.cpp
+	"MyRotateDialog.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyRotateDialog.h
+	<wx/radiobox.h>
+	<wx/button.h>
+	<wx/dialog.h>
+
+1521468425 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/src/MyThresholdDialog.cpp
+	"MyThresholdDialog.h"
+
+1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyThresholdDialog.h
+	<wx/wx.h>
+
