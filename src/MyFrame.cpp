@@ -151,7 +151,7 @@ void MyFrame::OnOpenImage(wxCommandEvent& event){
 }
 
 void MyFrame::OnOpenImageDefault(wxCommandEvent& event){
-    m_panel->OpenImage(wxT("/users/info/etu-s4/rueth/M4105C/tp4/default.jpg"));
+    m_panel->OpenImage(wxT("./default.jpg"));
 }
 
 void MyFrame::OnSave(wxCommandEvent& event)
