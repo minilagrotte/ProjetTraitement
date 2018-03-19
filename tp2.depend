@@ -1863,3 +1863,31 @@
 	<wx/wxprec.h>
 	<wx/wx.h>
 
+1521473320 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/User.cpp
+	"User.h"
+
+1521473329 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/User.h
+	<wx/colour.h>
+
+1521473769 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameColorPicker.cpp
+	"FrameColorPicker.h"
+
+1521473666 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/FrameColorPicker.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+	<wx/clrpicker.h>
+
+1491890964 /usr/include/wx-3.0/wx/clrpicker.h
+	"wx/defs.h"
+	"wx/pickerbase.h"
+	"wx/gtk/clrpicker.h"
+	"wx/generic/clrpickerg.h"
+
+1491890964 /usr/include/wx-3.0/wx/pickerbase.h
+	"wx/control.h"
+	"wx/sizer.h"
+	"wx/containr.h"
+
+1491890964 /usr/include/wx-3.0/wx/gtk/clrpicker.h
+	"wx/button.h"
+
