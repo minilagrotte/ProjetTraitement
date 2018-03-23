@@ -39,6 +39,8 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
+		<Unit filename="include/FrameColorPicker.h" />
+		<Unit filename="include/FrameOutil.h" />
 		<Unit filename="include/MyApp.h" />
 		<Unit filename="include/MyFrame.h" />
 		<Unit filename="include/MyImage.h" />
@@ -46,6 +48,8 @@
 		<Unit filename="include/MyRotateDialog.h" />
 		<Unit filename="include/MyThresholdDialog.h" />
 		<Unit filename="include/User.h" />
+		<Unit filename="src/FrameColorPicker.cpp" />
+		<Unit filename="src/FrameOutil.cpp" />
 		<Unit filename="src/MyApp.cpp" />
 		<Unit filename="src/MyFrame.cpp" />
 		<Unit filename="src/MyImage.cpp" />
