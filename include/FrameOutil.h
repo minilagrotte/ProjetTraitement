@@ -4,15 +4,20 @@
 #ifndef WX_PRECOMP
 #include <wx/wx.h>
 #endif
-#include "MyApp.h"
+
+class MyApp;
 
 class FrameOutil: public wxFrame
 {
 public:
     FrameOutil(const wxString& title, const wxPoint& pos, const wxSize& size,MyApp* ap);
+    void InitButton();
+    void onPresse(wxCommandEvent &event);
 private:
     MyApp* app;
+    wxPanel* panel;
     wxButton* bouton1;
+DECLARE_EVENT_TABLE()
 };
 
 #endif // FRAMEOUTIL_H

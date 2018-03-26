@@ -1912,3 +1912,84 @@
 1491890964 /usr/include/wx-3.0/wx/gtk/clrpicker.h
 	"wx/button.h"
 
+1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/enumeration.cpp
+
+1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/FrameColorPicker.cpp
+	"FrameColorPicker.h"
+
+1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/FrameColorPicker.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+	<wx/clrpicker.h>
+
+1521793768 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/FrameOutil.cpp
+	"FrameOutil.h"
+	"MyApp.h"
+	"enumeration.cpp"
+
+1522069888 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/FrameOutil.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+	"MyApp.h"
+
+1522069545 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyApp.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+	"MyFrame.h"
+	"FrameOutil.h"
+
+1522069402 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyApp.cpp
+	"MyApp.h"
+	"MyFrame.h"
+	"FrameColorPicker.h"
+
+1522069809 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyFrame.h
+	"MyPanel.h"
+	"MyApp.h"
+
+1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyPanel.h
+	"MyImage.h"
+
+1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyImage.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+	<stdlib.h>
+
+1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyFrame.cpp
+	"MyFrame.h"
+	"enumeration.cpp"
+	"MyApp.h"
+
+1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/enumeration.cpp
+
+1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyImage.cpp
+	"MyImage.h"
+
+1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyPanel.cpp
+	"MyPanel.h"
+	"enumeration.cpp"
+	"MyRotateDialog.h"
+	"MyThresholdDialog.h"
+
+1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyRotateDialog.h
+	<wx/radiobox.h>
+	<wx/button.h>
+	<wx/dialog.h>
+
+1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyThresholdDialog.h
+	<wx/wx.h>
+
+1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyRotateDialog.cpp
+	"MyRotateDialog.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyThresholdDialog.cpp
+	"MyThresholdDialog.h"
+
+1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/User.cpp
+	"User.h"
+
+1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/User.h
+	<wx/colour.h>
+
