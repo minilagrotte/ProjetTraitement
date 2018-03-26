@@ -25,7 +25,7 @@ MyImage* ToolCircle::draw(MyImage* img, int x, int y){
 
     for(int i =idep; i < ifin; i++){
         for(int j =jdep; j < jfin; j++){
-            if(sqrt(pow(x-i,2)+pow(y-j,2)) <= this->getSize()){
+            if(sqrt(pow((float)x-(float)i,2)+pow((float)y-(float)j,2)) <= this->getSize()){
                 img->SetPixel(data, width, height, i, j, r, g, b);
             }
         }
@@ -33,3 +33,13 @@ MyImage* ToolCircle::draw(MyImage* img, int x, int y){
 
     return nullptr;
 }
+
+MyImage* ToolCircle::drawLine(MyImage* img, int x1, int y1, int x2, int y2){
+    float vx = sqrt(pow(x2-x1,2));
+    float vy = sqrt(pow(y2-y1,2));
+    for(int i = 0;i<=vx;i++){
+        draw(img,i,y1+(vy/vx)*i);
+    }
+    return img;
+}
+

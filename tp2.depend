@@ -1752,21 +1752,21 @@
 
 1521478189 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
 
-1521479761 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyApp.cpp
+1522070919 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyApp.cpp
 	"MyApp.h"
-	"MyFrame.h"
-	"FrameOutil.h"
 	"FrameColorPicker.h"
 
-1521479762 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyApp.h
+1522070919 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyApp.h
 	<wx/wxprec.h>
 	<wx/wx.h>
+	"MyFrame.h"
+	"FrameOutil.h"
 
-1521794428 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyFrame.h
+1522070919 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyFrame.h
 	"MyPanel.h"
-	"MyApp.h"
 
-1522069772 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyPanel.h
+1522074913 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyPanel.h
+	<list>
 	"MyImage.h"
 	"ToolCircle.h"
 
@@ -1791,7 +1791,7 @@
 1521793583 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
 
-1522070009 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
+1522071290 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
 	"MyPanel.h"
 	"enumeration.cpp"
 	"MyRotateDialog.h"
@@ -1877,13 +1877,14 @@
 
 1521472530 dd88633ac91c91be9d371cc1c29ca3d3f994e
 
-1521478189 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameOutil.cpp
+1522070919 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameOutil.cpp
 	"FrameOutil.h"
+	"MyApp.h"
+	"enumeration.cpp"
 
-1521478189 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/FrameOutil.h
+1522070918 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/FrameOutil.h
 	<wx/wxprec.h>
 	<wx/wx.h>
-	"MyApp.h"
 
 1521478189 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/User.cpp
 	"User.h"
@@ -2000,10 +2001,10 @@
 1521792283 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/DrawingTool.h
 	<wx/wx.h>
 
-1522069949 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/ToolCircle.cpp
+1522072283 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/ToolCircle.cpp
 	"ToolCircle.h"
 
-1521794028 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/ToolCircle.h
+1522071790 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/ToolCircle.h
 	<DrawingTool.h>
 	"MyImage.h"
 

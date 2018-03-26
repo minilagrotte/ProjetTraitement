@@ -1,6 +1,7 @@
 #ifndef MYPANEL_H
 #define MYPANEL_H
 
+#include <list>
 #include "MyImage.h"
 #include "ToolCircle.h"
 
@@ -22,13 +23,17 @@ public:
     void OnRotate90Main();
     void OnPosterize();
     void OnHistogramme();
-    void OnMouse(wxMouseEvent& event);
+    void OnMouseLeftDown(wxMouseEvent& event);
+    void OnMouseLeftUP(wxMouseEvent& event);
+    void onMouseMov(wxMouseEvent& event);
+    void drawAction(wxPaintDC& dc);
 
     bool isImage();
 private :
     MyImage *m_image = nullptr;		// used to load and process the image
     wxBitmap m_bitmap ;	// used to display the image
     ToolCircle tlCircle;
+    std::list<wxPoint> coordLignes;
 
 };
 
