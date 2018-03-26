@@ -16,7 +16,7 @@ public:
 private:
     MyApp* app;
     wxPanel* panel;
-    wxButton* bouton1;
+
 DECLARE_EVENT_TABLE()
 };
 
