@@ -1762,14 +1762,15 @@
 	<wx/wxprec.h>
 	<wx/wx.h>
 
-1521479220 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyFrame.h
+1521794428 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyFrame.h
 	"MyPanel.h"
 	"MyApp.h"
 
-1521478189 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyPanel.h
+1522069772 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyPanel.h
 	"MyImage.h"
+	"ToolCircle.h"
 
-1521478189 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyImage.h
+1521793587 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyImage.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 	<stdlib.h>
@@ -1787,10 +1788,10 @@
 	<wx/button.h>
 	<wx/dialog.h>
 
-1521478189 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
+1521793583 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
 
-1521478189 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
+1522070009 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
 	"MyPanel.h"
 	"enumeration.cpp"
 	"MyRotateDialog.h"
@@ -1829,7 +1830,7 @@
 1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyThresholdDialog.h
 	<wx/wx.h>
 
-1521479851 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyFrame.cpp
+1522069483 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyFrame.cpp
 	"MyFrame.h"
 	"enumeration.cpp"
 	"MyApp.h"
@@ -1911,4 +1912,17 @@
 
 1491890964 /usr/include/wx-3.0/wx/gtk/clrpicker.h
 	"wx/button.h"
+
+1521790848 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/DrawingTool.cpp
+	"DrawingTool.h"
+
+1521792283 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/DrawingTool.h
+	<wx/wx.h>
+
+1522069949 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/ToolCircle.cpp
+	"ToolCircle.h"
+
+1521794028 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/ToolCircle.h
+	<DrawingTool.h>
+	"MyImage.h"
 
