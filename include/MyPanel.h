@@ -2,6 +2,8 @@
 #define MYPANEL_H
 
 #include "MyImage.h"
+#include "ToolCircle.h"
+
 class MyPanel: public wxPanel
 {
 public:
@@ -20,11 +22,14 @@ public:
     void OnRotate90Main();
     void OnPosterize();
     void OnHistogramme();
+    void OnMouse(wxMouseEvent& event);
 
     bool isImage();
 private :
     MyImage *m_image = nullptr;		// used to load and process the image
     wxBitmap m_bitmap ;	// used to display the image
+    ToolCircle tlCircle;
+
 };
 
 

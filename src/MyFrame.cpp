@@ -236,7 +236,5 @@ void MyFrame::OnClose(wxCloseEvent& event)
             app->Exit();
         }
     }
-    //Destroy();  // you may also do:  event.Skip();
-                // since the default event handler does call Destroy(), too
 }
 

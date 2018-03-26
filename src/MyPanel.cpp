@@ -6,6 +6,9 @@
 MyPanel::MyPanel(wxWindow *parent)
 : wxPanel(parent) {
     Bind(wxEVT_PAINT, &MyPanel::OnPaint, this) ;
+
+    this->tlCircle = ToolCircle(wxColor(0,0,0), 10);
+	Bind(wxEVT_LEFT_DOWN, &MyPanel::OnMouse,this);
 }
 
 
@@ -110,6 +113,7 @@ void MyPanel::OnRotate90Main(){
         m->Destroy();
     }
     this->GetParent()->SetClientSize(m_image->GetSize());
+    tlCircle.draw(m,100,100);
     Refresh();
 }
 
@@ -128,4 +132,15 @@ void MyPanel::OnHistogramme(){
 
 bool MyPanel::isImage(){
     return m_image != nullptr;
+}
+
+void MyPanel::OnMouse(wxMouseEvent& event){
+    if(isImage()){
+        wxPoint coord = event.GetPosition();
+        //wxString s;
+        //s.sprintf("x : %d / y : %d",coord.x, coord.y);
+        //SetStatusText(s);
+        this->tlCircle.draw(m_image,coord.x,coord.y);
+        Refresh();
+    }
 }
