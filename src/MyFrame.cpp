@@ -22,6 +22,9 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,M
 	menuFile->Append(ID_Moins_large, wxT("Moins Large\tCtrl--")) ;
 	Bind(wxEVT_MENU, &MyFrame::OnResize, this, ID_Moins_large) ;
 
+	menuFile->Append(ID_CtrlZ, wxT("Undo\tCtrl-z")) ;
+	Bind(wxEVT_MENU, &MyFrame::OnUndoDraw, this, ID_CtrlZ) ;
+
 	menuFile->Append(ID_Open, wxT("Open image ...\tCtrl-o")) ;
 	Bind(wxEVT_MENU, &MyFrame::OnOpenImage, this, ID_Open) ;
 
@@ -32,7 +35,7 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,M
 	Bind(wxEVT_MENU, &MyFrame::OnSave, this, ID_Save) ;
 
 	menuFile->Append(wxID_EXIT) ;
-	Bind(wxEVT_MENU, &MyFrame::OnExit, this, wxID_EXIT) ;
+	Bind(wxEVT_MENU, &MyFrame::OnExit, this, wxID_EXIT);
     //---------------------------------------------------------------------------------------------------
 
 	Bind(wxEVT_MOTION, &MyFrame::OnMouse,this);
@@ -144,6 +147,9 @@ void MyFrame::OnMouse(wxMouseEvent& event){
     wxString s;
     s.sprintf("x : %d / y : %d",coord.x, coord.y);
     SetStatusText(s);
+}
+void MyFrame::OnUndoDraw(wxCommandEvent& event){
+    m_panel->undoDraw();
 }
 
 void MyFrame::OnOpenImage(wxCommandEvent& event){

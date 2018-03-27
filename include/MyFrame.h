@@ -19,6 +19,7 @@ private:
     void OnOpenImage(wxCommandEvent& event);
     void OnOpenImageDefault(wxCommandEvent& event);
     void OnSave(wxCommandEvent& event);
+    void OnUndoDraw(wxCommandEvent& event);
 
     void OnClose(wxCloseEvent& event);
 

@@ -1750,7 +1750,7 @@
 
 1491890964 D
 
-1521478189 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
+1522153121 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
 
 1522070919 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyApp.cpp
 	"MyApp.h"
@@ -1762,13 +1762,13 @@
 	"MyFrame.h"
 	"FrameOutil.h"
 
-1522070919 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyFrame.h
+1522153263 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyFrame.h
 	"MyPanel.h"
 
-1522074913 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyPanel.h
+1522152944 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyPanel.h
 	<list>
 	"MyImage.h"
-	"ToolCircle.h"
+	"Forme.h"
 
 1521793587 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyImage.h
 	<wx/wxprec.h>
@@ -1791,13 +1791,14 @@
 1521793583 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
 
-1522071290 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
+1522153386 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
 	"MyPanel.h"
 	"enumeration.cpp"
 	"MyRotateDialog.h"
 	"MyThresholdDialog.h"
+	"Trait.h"
 
-1521478189 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
+1522153121 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
 
 1521478189 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyRotateDialog.h
 	<wx/radiobox.h>
@@ -1830,7 +1831,7 @@
 1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyThresholdDialog.h
 	<wx/wx.h>
 
-1522069483 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyFrame.cpp
+1522153419 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyFrame.cpp
 	"MyFrame.h"
 	"enumeration.cpp"
 	"MyApp.h"
@@ -2022,4 +2023,16 @@
 
 1522070429 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/ToolCircle.cpp
 	"ToolCircle.h"
+
+1522149750 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/Forme.cpp
+	"Forme.h"
+
+1522149671 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/Forme.h
+	<wx/wx.h>
+
+1522151785 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/Trait.h
+	<Forme.h>
+
+1522151045 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/Trait.cpp
+	"Trait.h"
 

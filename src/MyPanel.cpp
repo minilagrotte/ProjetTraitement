@@ -2,14 +2,17 @@
 #include "enumeration.cpp"
 #include "MyRotateDialog.h"
 #include "MyThresholdDialog.h"
-//////////////////Constructeur ///////////////////////////      //voir memoryDC
+#include "Trait.h"
+//////////////////Constructeur ///////////////////////////      //voir memoryDC pour calque
 MyPanel::MyPanel(wxWindow *parent)
 : wxPanel(parent) {
     Bind(wxEVT_PAINT, &MyPanel::OnPaint, this) ;
-
-    this->tlCircle = ToolCircle(wxColor(0,0,0), 50);
-    coordLignes = {};
+    actions = {};
 	Bind(wxEVT_LEFT_DOWN, &MyPanel::OnMouseLeftDown,this);
+	Bind(wxEVT_LEFT_UP, &MyPanel::OnMouseLeftUP,this);
+	Bind(wxEVT_MOTION, &MyPanel::onMouseMov,this);
+	mouseLeftDown = false;
+	currentPen = wxPen(wxColor(200,200,200),5,wxPENSTYLE_SOLID);
 }
 
 
@@ -33,7 +36,6 @@ void MyPanel::OnPaint(wxPaintEvent &WXUNUSED(event)){
         wxPaintDC dc(this);
         dc.DrawBitmap(m_bitmap,0,0);
         drawAction(dc);
-        dc.DrawLine(0,100,200,300);
     }
 }
 
@@ -116,7 +118,6 @@ void MyPanel::OnRotate90Main(){
         m->Destroy();
     }
     this->GetParent()->SetClientSize(m_image->GetSize());
-    tlCircle.draw(m,100,100);
     Refresh();
 }
 void MyPanel::OnPosterize(){
@@ -138,16 +139,36 @@ bool MyPanel::isImage(){
 
 void MyPanel::OnMouseLeftDown(wxMouseEvent& event){
     if(isImage()){
-        wxPoint coord = event.GetPosition();
-        //this->tlCircle.draw(m_image,coord.x,coord.y);
-        //this->tlCircle.drawLine(m_image,100,100,2000,200);
-        this->coordLignes.push_back(coord);
+        Trait* t = new Trait(event.GetPosition(),event.GetPosition());
+        t->setPen(currentPen);
+        this->actions.push_back(t);
+        Refresh();
+    }
+    mouseLeftDown = true;
+}
+
+void MyPanel::OnMouseLeftUP(wxMouseEvent& event){
+    mouseLeftDown = false;
+}
+
+void MyPanel::onMouseMov(wxMouseEvent& event){
+    if(isImage() && mouseLeftDown){
+        Trait* t = (Trait*)actions.back();
+        t->setP2(event.GetPosition());
         Refresh();
     }
 }
 
 void MyPanel::drawAction(wxPaintDC& dc){
-    for(wxPoint p : coordLignes){
-        dc.DrawLine(wxPoint(0,0),p);
+
+    for(Forme* f : actions){
+        f->draw(dc);
     }
+
+}
+
+void MyPanel::undoDraw(){
+    if(!actions.empty())
+        actions.pop_back();
+    Refresh();
 }
