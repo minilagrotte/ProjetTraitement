@@ -2,13 +2,14 @@
 #include "enumeration.cpp"
 #include "MyRotateDialog.h"
 #include "MyThresholdDialog.h"
-//////////////////Constructeur ///////////////////////////
+//////////////////Constructeur ///////////////////////////      //voir memoryDC
 MyPanel::MyPanel(wxWindow *parent)
 : wxPanel(parent) {
     Bind(wxEVT_PAINT, &MyPanel::OnPaint, this) ;
 
-    this->tlCircle = ToolCircle(wxColor(0,0,0), 10);
-	Bind(wxEVT_LEFT_DOWN, &MyPanel::OnMouse,this);
+    this->tlCircle = ToolCircle(wxColor(0,0,0), 50);
+    coordLignes = {};
+	Bind(wxEVT_LEFT_DOWN, &MyPanel::OnMouseLeftDown,this);
 }
 
 
@@ -31,6 +32,8 @@ void MyPanel::OnPaint(wxPaintEvent &WXUNUSED(event)){
         m_bitmap = wxBitmap(*m_image);
         wxPaintDC dc(this);
         dc.DrawBitmap(m_bitmap,0,0);
+        drawAction(dc);
+        dc.DrawLine(0,100,200,300);
     }
 }
 
@@ -116,7 +119,6 @@ void MyPanel::OnRotate90Main(){
     tlCircle.draw(m,100,100);
     Refresh();
 }
-
 void MyPanel::OnPosterize(){
     m_image->posterize();
     Refresh();
@@ -134,13 +136,18 @@ bool MyPanel::isImage(){
     return m_image != nullptr;
 }
 
-void MyPanel::OnMouse(wxMouseEvent& event){
+void MyPanel::OnMouseLeftDown(wxMouseEvent& event){
     if(isImage()){
         wxPoint coord = event.GetPosition();
-        //wxString s;
-        //s.sprintf("x : %d / y : %d",coord.x, coord.y);
-        //SetStatusText(s);
-        this->tlCircle.draw(m_image,coord.x,coord.y);
+        //this->tlCircle.draw(m_image,coord.x,coord.y);
+        //this->tlCircle.drawLine(m_image,100,100,2000,200);
+        this->coordLignes.push_back(coord);
         Refresh();
+    }
+}
+
+void MyPanel::drawAction(wxPaintDC& dc){
+    for(wxPoint p : coordLignes){
+        dc.DrawLine(wxPoint(0,0),p);
     }
 }

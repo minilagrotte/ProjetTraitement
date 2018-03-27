@@ -12,6 +12,7 @@ class ToolCircle : public DrawingTool
         virtual ~ToolCircle();
 
         MyImage* draw(MyImage* img, int x, int y);
+        MyImage* drawLine(MyImage* img, int x1, int y1, int x2, int y2);
 
     protected:
 
