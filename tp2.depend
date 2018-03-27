@@ -1925,12 +1925,12 @@
 	<wx/wx.h>
 	<wx/clrpicker.h>
 
-1522070319 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/FrameOutil.cpp
+1522074733 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/FrameOutil.cpp
 	"FrameOutil.h"
 	"MyApp.h"
 	"enumeration.cpp"
 
-1522070200 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/FrameOutil.h
+1522073923 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/FrameOutil.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 
@@ -1947,7 +1947,8 @@
 1522070073 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyFrame.h
 	"MyPanel.h"
 
-1522070429 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyPanel.h
+1522075846 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyPanel.h
+	<list>
 	"MyImage.h"
 	"ToolCircle.h"
 
@@ -1966,7 +1967,7 @@
 1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
 
-1522070429 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyPanel.cpp
+1522075846 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyPanel.cpp
 	"MyPanel.h"
 	"enumeration.cpp"
 	"MyRotateDialog.h"
@@ -2017,11 +2018,11 @@
 1522070429 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/DrawingTool.h
 	<wx/wx.h>
 
-1522070429 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/ToolCircle.h
+1522075846 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/ToolCircle.h
 	<DrawingTool.h>
 	"MyImage.h"
 
-1522070429 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/ToolCircle.cpp
+1522075846 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/ToolCircle.cpp
 	"ToolCircle.h"
 
 1522149750 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/Forme.cpp
