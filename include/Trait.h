@@ -17,6 +17,10 @@ class Trait : public Forme
         wxPoint getP1(){return p1;}
         wxPoint getP2(){return p2;}
 
+        void onLeftDown(wxPoint coord);
+        void onLeftUP(wxPoint coord);
+        void onMouseMov(wxPoint coord);
+
     protected:
 
     private:

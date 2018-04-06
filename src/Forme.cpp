@@ -2,7 +2,8 @@
 
 Forme::Forme()
 {
-
+    finConstruction = false;
+    nbClick = 1;
 }
 
 Forme::~Forme()

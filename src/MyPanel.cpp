@@ -13,6 +13,7 @@ MyPanel::MyPanel(wxWindow *parent)
 	Bind(wxEVT_MOTION, &MyPanel::onMouseMov,this);
 	mouseLeftDown = false;
 	currentPen = wxPen(wxColor(200,200,200),5,wxPENSTYLE_SOLID);
+	actions = std::list<Forme*>();
 }
 
 
@@ -138,33 +139,40 @@ bool MyPanel::isImage(){
 }
 
 void MyPanel::OnMouseLeftDown(wxMouseEvent& event){
-    if(isImage()){
-        Trait* t = new Trait(event.GetPosition(),event.GetPosition());
-        t->setPen(currentPen);
-        this->actions.push_back(t);
+    if(!mouseLeftDown){
+        if(actions.back() == nullptr || actions.back()->finConstruction){  //dans le cas ou il n'y pas de forme dessiner
+                                                                        //ou que la dernière de la liste est construite
+            actions.push_back(new Trait(event.GetPosition(),event.GetPosition()));//on construit un objet trait
+            actions.back()->onLeftDown(event.GetPosition());
+        } else {
+            actions.back()->onLeftDown(event.GetPosition());
+        }
         Refresh();
+        mouseLeftDown = true;
     }
-    mouseLeftDown = true;
 }
 
 void MyPanel::OnMouseLeftUP(wxMouseEvent& event){
-    mouseLeftDown = false;
+    if(mouseLeftDown){
+        if(actions.back() != nullptr && !actions.back()->finConstruction){
+            actions.back()->onLeftUP(event.GetPosition());
+        }
+        Refresh();
+        mouseLeftDown = false;
+    }
 }
 
 void MyPanel::onMouseMov(wxMouseEvent& event){
-    if(isImage() && mouseLeftDown){
-        Trait* t = (Trait*)actions.back();
-        t->setP2(event.GetPosition());
-        Refresh();
+    if(actions.back() != nullptr && !actions.back()->finConstruction){
+            actions.back()->onMouseMov(event.GetPosition());
+            Refresh();
     }
 }
 
 void MyPanel::drawAction(wxPaintDC& dc){
-
     for(Forme* f : actions){
         f->draw(dc);
     }
-
 }
 
 void MyPanel::undoDraw(){
