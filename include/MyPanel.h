@@ -3,7 +3,7 @@
 
 #include <list>
 #include "MyImage.h"
-#include "ToolCircle.h"
+#include "Forme.h"
 
 class MyPanel: public wxPanel
 {
@@ -29,12 +29,17 @@ public:
     void onMouseMov(wxMouseEvent& event);
     void drawAction(wxPaintDC& dc);
 
+    void undoDraw();
+
+    wxPen currentPen;
+
     bool isImage();
 private :
     MyImage *m_image = nullptr;		// used to load and process the image
     wxBitmap m_bitmap ;	// used to display the image
-    ToolCircle tlCircle;
-    std::list<wxPoint> coordLignes;
+    std::list<Forme*> actions;
+
+    bool mouseLeftDown;
 
 };
 

@@ -20,5 +20,9 @@ enum	// énumération. Elle gère la numérotation automatiquement
 	ID_Rotate90Main,
 	ID_Posterize,
 	ID_Histogramme,
+<<<<<<< HEAD
 	ID_TRAMAGE
+=======
+	ID_CtrlZ
+>>>>>>> 8099637d75d072c20adf1a138044f60e10188a62
 };
