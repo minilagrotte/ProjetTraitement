@@ -132,6 +132,11 @@ void MyPanel::OnHistogramme(){
     Refresh();
 }
 
+void MyPanel::OnTrame(){
+    m_image->Trame();
+    Refresh();
+}
+
 bool MyPanel::isImage(){
     return m_image != nullptr;
 }

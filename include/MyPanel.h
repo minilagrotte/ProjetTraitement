@@ -23,6 +23,7 @@ public:
     void OnRotate90Main();
     void OnPosterize();
     void OnHistogramme();
+    void OnTrame();
     void OnMouseLeftDown(wxMouseEvent& event);
     void OnMouseLeftUP(wxMouseEvent& event);
     void onMouseMov(wxMouseEvent& event);

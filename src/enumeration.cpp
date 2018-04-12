@@ -19,5 +19,6 @@ enum	// énumération. Elle gère la numérotation automatiquement
 	ID_Mirror_ver_main,
 	ID_Rotate90Main,
 	ID_Posterize,
-	ID_Histogramme
+	ID_Histogramme,
+	ID_TRAMAGE
 };

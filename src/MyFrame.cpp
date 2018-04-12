@@ -80,6 +80,9 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,M
 	menuProcess->Append(ID_Histogramme, wxT("Faire un histogramme\tAlt-h"));
 	Bind(wxEVT_MENU,&MyFrame::OnProcess, this, ID_Histogramme);
 
+    menuProcess->Append(ID_TRAMAGE, wxT("Trame de l'image\tAlt-t"));
+	Bind(wxEVT_MENU,&MyFrame::OnProcess, this, ID_TRAMAGE);
+
 
 
     //---------------------------------------------------------------------------------------------------
@@ -220,6 +223,9 @@ void MyFrame::OnProcess(wxCommandEvent& event){
             break;
         case ID_Histogramme:
             m_panel->OnHistogramme();
+            break;
+        case ID_TRAMAGE:
+            m_panel->OnTrame();
             break;
 
         }
