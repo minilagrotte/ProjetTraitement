@@ -6,6 +6,7 @@
 #endif
 #include "MyFrame.h"
 #include "FrameOutil.h"
+class FrameColorPicker ;
 
 class MyApp: public wxApp
 {
@@ -15,6 +16,7 @@ public:
 private:
     MyFrame* frame;
     FrameOutil* frameOutil;
+    FrameColorPicker* frameDessin;
 };
 
 

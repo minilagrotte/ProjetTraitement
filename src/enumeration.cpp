@@ -20,5 +20,7 @@ enum	// énumération. Elle gère la numérotation automatiquement
 	ID_Rotate90Main,
 	ID_Posterize,
 	ID_Histogramme,
-	ID_CtrlZ
+	ID_CtrlZ,
+	ID_OutilDefaut,
+	ID_Trait
 };

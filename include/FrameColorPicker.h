@@ -6,17 +6,19 @@
 #include <wx/wx.h>
 #endif
 #include <wx/clrpicker.h>
+#include "MyApp.h"
 
 class FrameColorPicker : public wxFrame
 {
     public:
-        FrameColorPicker(const wxString& title, const wxPoint& pos, const wxSize& size);
+        FrameColorPicker(const wxString& title, const wxPoint& pos, const wxSize& size, MyApp* app_);
         virtual ~FrameColorPicker();
 
         wxColourPickerCtrl* colorPicker;
     protected:
 
     private:
+        MyApp* app;
 };
 
 #endif // FRAMECOLORPICKER_H

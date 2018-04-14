@@ -142,7 +142,9 @@ void MyPanel::OnMouseLeftDown(wxMouseEvent& event){
     if(!mouseLeftDown){
         if(actions.back() == nullptr || actions.back()->finConstruction){  //dans le cas ou il n'y pas de forme dessiner
                                                                         //ou que la dernière de la liste est construite
-            actions.push_back(new Trait(event.GetPosition(),event.GetPosition()));//on construit un objet trait
+            Trait* t = new Trait(event.GetPosition(),event.GetPosition());
+            t->setPen(currentPen);
+            actions.push_back(t);//on construit un objet trait
             actions.back()->onLeftDown(event.GetPosition());
         } else {
             actions.back()->onLeftDown(event.GetPosition());
