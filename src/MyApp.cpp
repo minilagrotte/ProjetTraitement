@@ -8,6 +8,8 @@ bool MyApp::OnInit()
 	frameDessin = new FrameColorPicker(wxT("Outil Dessin"),wxPoint(1200,340),wxSize(300,300),this);
 
 	wxInitAllImageHandlers();
+
+	frameDessin->InitButton();
 	frameDessin->Show(true);
     frameOutil->InitButton();
 	frameOutil->Show(true);
@@ -24,6 +26,14 @@ void MyApp::action(wxCommandEvent& event)
 wxColor MyApp::getCurrentColor()
 {
     return frameDessin->getCurrentColor();
+}
+
+void MyApp::setOutilCourrant(int outil){
+    frame->setOutilCourrant(outil);
+}
+
+int MyApp::getCurrentSize(){
+    return frameDessin->getCurrentSize();
 }
 
 

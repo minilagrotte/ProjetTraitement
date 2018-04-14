@@ -20,8 +20,11 @@ enum	// énumération. Elle gère la numérotation automatiquement
 	ID_Rotate90Main,
 	ID_Posterize,
 	ID_Histogramme,
-	ID_CtrlZ,
 	ID_OutilDefaut,
 	ID_Trait,
-	ID_ColorSelection
+	ID_Crayon,
+	ID_ColorSelection,
+	ID_SizeSelection,
+	ID_TRAMAGE,
+	ID_CtrlZ
 };

@@ -39,6 +39,7 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
+		<Unit filename="include/Crayon.h" />
 		<Unit filename="include/DrawingTool.h" />
 		<Unit filename="include/Forme.h" />
 		<Unit filename="include/FrameColorPicker.h" />
@@ -52,6 +53,7 @@
 		<Unit filename="include/ToolCircle.h" />
 		<Unit filename="include/Trait.h" />
 		<Unit filename="include/User.h" />
+		<Unit filename="src/Crayon.cpp" />
 		<Unit filename="src/DrawingTool.cpp" />
 		<Unit filename="src/Forme.cpp" />
 		<Unit filename="src/FrameColorPicker.cpp" />

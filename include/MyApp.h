@@ -14,6 +14,8 @@ public:
 	virtual bool OnInit();
 	void action(wxCommandEvent& event);
 	wxColor getCurrentColor();
+	void setOutilCourrant(int outil);
+	int getCurrentSize();
 private:
     MyFrame* frame;
     FrameOutil* frameOutil;

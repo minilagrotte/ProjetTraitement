@@ -11,6 +11,8 @@ public:
 	MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,MyApp* ap);
     void OnProcess(wxCommandEvent& event);
     wxColor getCurrentColor();
+    void setOutilCourrant(int outil);
+    int getCurrentSize();
 private:
 	void OnHello(wxCommandEvent& event);
 	void OnExit(wxCommandEvent& event);

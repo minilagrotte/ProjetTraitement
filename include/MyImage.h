@@ -23,6 +23,8 @@ class MyImage : public wxImage
         MyImage* Rotation90();
         void posterize();
         int histogramme();
+        void Trame();
+        int recupSeuil(int xCase,int yCase);
 
         virtual ~MyImage();
 

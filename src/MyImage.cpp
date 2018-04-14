@@ -242,6 +242,193 @@ int MyImage::histogramme(){
 
     return nbCouleur;
 }
+
+void MyImage::Trame(){
+    this->Desaturate();
+
+    int placePix = 0;
+    int largeur = this->GetWidth();
+    int hauteur = this->GetHeight();
+    int taille = this->GetHeight() * this->GetWidth() * 3 ;
+    unsigned char* data = this->GetData();
+
+
+    for(int i =0;i<largeur;i=i+4){
+        for(int j =0;j<hauteur;j=j+4){
+
+
+            int seuil = recupSeuil(i,j);
+            if(seuil>224){
+                for(int h = i ; h<(i+4) ; h++){
+                    for(int k = j ;k<(j+4) ; k++){
+
+                        placePix = ((k*largeur)+h)*3;
+
+                        for(int t=0;t<3;t++){
+                            if(placePix+t < taille){
+                               data[placePix+t] = 255;
+                            }
+                        }
+                    }
+                }
+            }else if(seuil<=224 && 193<seuil){
+                for(int h = i;h<=i+3;h++){
+                    for(int k = j;k<=j+3;k++){
+                        placePix = ((k*largeur)+h)*3;
+                        if(h==i+1 && k==j+1){
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 0;
+                                }
+                            }
+                        }else{
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 255;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }else if(seuil<=193 && 162<seuil){
+                for(int h = i;h<=i+3;h++){
+                    for(int k = j;k<=j+3;k++){
+                        placePix = ((k*largeur)+h)*3;
+                        if((h==i+1 && k==j+1) ||(h==i+2 && k==j+2) ){
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 0;
+                                }
+                            }
+                        }else{
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 255;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }else if(seuil<=162 && 131<seuil){
+                for(int h = i;h<=i+3;h++){
+                    for(int k = j;k<=j+3;k++){
+                        placePix = ((k*largeur)+h)*3;
+                        if((h==i+1 && k==j+1) ||(h==i+2 && k==j+2) ||(h==i+1 && k==j+2) ){
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 0;
+                                }
+                            }
+                        }else{
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 255;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }else if(seuil<=131 && 100<seuil){
+                for(int h = i;h<=i+3;h++){
+                    for(int k = j;k<=j+3;k++){
+                        placePix = ((k*largeur)+h)*3;
+                        if((j<k && k<j+3) && (i<h && h<i+3) ){
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 0;
+                                }
+                            }
+                        }else{
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 255;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }else if(seuil<=100 && 69<seuil){
+                for(int h = i;h<=i+3;h++){
+                    for(int k = j;k<=j+3;k++){
+                        placePix = ((k*largeur)+h)*3;
+                        if(((h==i && k==j+1)||(h==i+1 && k==j+3)||(h==i+2 &&k==j)||(h==i+3 && k==j+2)) || ((j<k && k<j+3) && (i<h && h<i+3) ) ){
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 0;
+                                }
+                            }
+                        }else{
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 255;
+                                }
+                            }
+                        }
+                    }
+                }
+            }else if( seuil<=69 && 38<seuil){
+                for(int h = i;h<=i+3;h++){
+                    for(int k = j;k<=j+3;k++){
+                        placePix = ((k*largeur)+h)*3;
+                        if((h==i&&( k==j|| k==j+3)) || (h==i+3 && ( k==j|| k==j+3))){
+                            for(int t=0;t<3;t++){
+
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 255;
+                                }
+                            }
+                        }else{
+                            for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }else{
+                for(int h = i;h<=i+3;h++){
+                    for(int k = j;k<=j+3;k++){
+                            placePix = ((k*largeur)+h)*3;
+                        for(int t=0;t<3;t++){
+                                if(placePix+t < taille){
+                                    data[placePix+t] = 0;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+int MyImage::recupSeuil(int xCase,int yCase){
+    unsigned char* data = this->GetData();
+    int placePix = 0;
+    int seuil = 0;
+    int nbPix = 0;
+    int taille = this->GetHeight() * this->GetWidth() * 3 ;
+    int largeur = this->GetWidth();
+    for(int x = xCase; x<=xCase+3;x++){
+        for(int y = yCase;y<=yCase+3;y++){
+            placePix = (y*largeur+x)*3;
+            if(placePix<taille){
+               seuil += data[placePix];
+               nbPix++;
+            }
+
+        }
+    }
+    seuil = (int)(seuil/nbPix);
+    return seuil;
+}
+
+
 void MyImage::GetPixel(unsigned char* data, int width, int height, int x, int y, unsigned char& r,unsigned char& g,unsigned char& b){
     int pos = (y * width + x)*3;
     r = data[pos];

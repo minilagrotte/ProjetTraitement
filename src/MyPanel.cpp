@@ -3,12 +3,13 @@
 #include "MyRotateDialog.h"
 #include "MyThresholdDialog.h"
 #include "Trait.h"
+#include "Crayon.h"
 //////////////////Constructeur ///////////////////////////      //voir memoryDC pour calque
 #include "MyFrame.h"
 
 MyPanel::MyPanel(wxWindow *parent)
 : wxPanel(parent) {
-    Bind(wxEVT_PAINT, &MyPanel::OnPaint, this) ;
+    Bind(wxEVT_PAINT, &MyPanel::OnPaint, this);
     actions = {};
 	Bind(wxEVT_LEFT_DOWN, &MyPanel::OnMouseLeftDown,this);
 	Bind(wxEVT_LEFT_UP, &MyPanel::OnMouseLeftUP,this);
@@ -16,6 +17,7 @@ MyPanel::MyPanel(wxWindow *parent)
 	mouseLeftDown = false;
 	currentPen = wxPen(wxColor(200,200,200),5,wxPENSTYLE_SOLID);
 	actions = std::list<Forme*>();
+	outilCourrant = ID_Crayon;
 }
 
 
@@ -136,6 +138,11 @@ void MyPanel::OnHistogramme(){
     Refresh();
 }
 
+void MyPanel::OnTrame(){
+    m_image->Trame();
+    Refresh();
+}
+
 bool MyPanel::isImage(){
     return m_image != nullptr;
 }
@@ -144,8 +151,21 @@ void MyPanel::OnMouseLeftDown(wxMouseEvent& event){
     if(!mouseLeftDown && isImage()){
         if(actions.back() == nullptr || actions.back()->finConstruction){  //dans le cas ou il n'y pas de forme dessiner
                                                                         //ou que la dernière de la liste est construite
-            Trait* t = new Trait(event.GetPosition(),event.GetPosition());
+            Forme* t;
+            switch(outilCourrant){
+            case ID_Trait :
+                t = new Trait(event.GetPosition(),event.GetPosition());
+                break;
+            case ID_Crayon:
+                t = new Crayon();
+                break;
+            default:
+                t = new Crayon();
+                break;
+            }
+
             currentPen.SetColour(frame->getCurrentColor());
+            currentPen.SetWidth(frame->getCurrentSize());
             t->setPen(currentPen);
             actions.push_back(t);//on construit un objet trait
             actions.back()->onLeftDown(event.GetPosition());
@@ -185,4 +205,6 @@ void MyPanel::undoDraw(){
         actions.pop_back();
     Refresh();
 }
+
+
 

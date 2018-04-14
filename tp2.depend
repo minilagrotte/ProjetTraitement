@@ -1748,29 +1748,29 @@
 	"MyRotateDialog.h"
 	"MyThresholdDialog.h"
 
-1491890964 D
+1523022101 D
 
-1523699851 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
+1523721918 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
 
-1523707798 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyApp.cpp
+1523722996 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyApp.cpp
 	"MyApp.h"
 	"FrameColorPicker.h"
 
-1523709426 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyApp.h
+1523722795 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyApp.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 	"MyFrame.h"
 	"FrameOutil.h"
 
-1523709426 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyFrame.h
+1523722891 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyFrame.h
 	"MyPanel.h"
 
-1523709426 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyPanel.h
+1523720564 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyPanel.h
 	<list>
 	"MyImage.h"
 	"Forme.h"
 
-1521793587 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyImage.h
+1523709496 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyImage.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 	<stdlib.h>
@@ -1788,17 +1788,19 @@
 	<wx/button.h>
 	<wx/dialog.h>
 
-1521793583 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
+1523709496 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
 
-1523707091 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
+1523724385 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
 	"MyPanel.h"
 	"enumeration.cpp"
 	"MyRotateDialog.h"
 	"MyThresholdDialog.h"
 	"Trait.h"
+	"Crayon.h"
+	"MyFrame.h"
 
-1523699851 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
+1523721918 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/enumeration.cpp
 
 1521478189 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/MyRotateDialog.h
 	<wx/radiobox.h>
@@ -1831,7 +1833,7 @@
 1521468425 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement-master/include/MyThresholdDialog.h
 	<wx/wx.h>
 
-1523709021 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyFrame.cpp
+1523722915 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyFrame.cpp
 	"MyFrame.h"
 	"enumeration.cpp"
 	"MyApp.h"
@@ -1878,7 +1880,7 @@
 
 1521472530 dd88633ac91c91be9d371cc1c29ca3d3f994e
 
-1522153657 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameOutil.cpp
+1523709496 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameOutil.cpp
 	"FrameOutil.h"
 	"MyApp.h"
 	"enumeration.cpp"
@@ -1893,14 +1895,15 @@
 1521478189 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/User.h
 	<wx/colour.h>
 
-1523707594 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameColorPicker.cpp
+1523723025 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameColorPicker.cpp
 	"FrameColorPicker.h"
 	"enumeration.cpp"
 
-1523707495 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/FrameColorPicker.h
+1523724012 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/FrameColorPicker.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 	<wx/clrpicker.h>
+	<wx/spinctrl.h>
 	"MyApp.h"
 
 1491890964 /usr/include/wx-3.0/wx/clrpicker.h
@@ -1917,7 +1920,7 @@
 1491890964 /usr/include/wx-3.0/wx/gtk/clrpicker.h
 	"wx/button.h"
 
-1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/enumeration.cpp
+1523539075 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/enumeration.cpp
 
 1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/FrameColorPicker.cpp
 	"FrameColorPicker.h"
@@ -1946,34 +1949,35 @@
 	"MyApp.h"
 	"FrameColorPicker.h"
 
-1522070073 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyFrame.h
+1523538799 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyFrame.h
 	"MyPanel.h"
 
-1522075846 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyPanel.h
+1523538799 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyPanel.h
 	<list>
 	"MyImage.h"
-	"ToolCircle.h"
+	"Forme.h"
 
-1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyImage.h
+1523347914 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyImage.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 	<stdlib.h>
 
-1522070429 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyFrame.cpp
+1523538799 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyFrame.cpp
 	"MyFrame.h"
 	"enumeration.cpp"
 	"MyApp.h"
 
-1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/enumeration.cpp
+1523539075 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/enumeration.cpp
 
-1521789230 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyImage.cpp
+1523519798 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
 
-1522075846 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyPanel.cpp
+1523538799 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/MyPanel.cpp
 	"MyPanel.h"
 	"enumeration.cpp"
 	"MyRotateDialog.h"
 	"MyThresholdDialog.h"
+	"Trait.h"
 
 1521789230 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/MyRotateDialog.h
 	<wx/radiobox.h>
@@ -2033,7 +2037,7 @@
 1523020974 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/Forme.h
 	<wx/wx.h>
 
-1522154352 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/Trait.h
+1523711562 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/Trait.h
 	<Forme.h>
 
 1523022101 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/Trait.cpp
@@ -2043,4 +2047,65 @@
 	<wx/wxprec.h>
 	<wx/wx.h>
 	<wx/clrpicker.h>
+
+1523706119 ker.h>
+
+1523538799 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/Forme.cpp
+	"Forme.h"
+
+1523538799 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/Forme.h
+	<wx/wx.h>
+
+1523538799 /users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/include/Trait.h
+	<Forme.h>
+
+1523538799 source:/users/info/etu-s4/lascauxr/M4105C/ProjetTraitement/src/Trait.cpp
+	"Trait.h"
+
+1523538799 621e43eddab7d5488e1c6b6f9fe0115964601
+
+1523715572 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/Crayon.cpp
+	"Crayon.h"
+
+1523715110 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/Crayon.h
+	<Forme.h>
+	<vector>
+
+1491890964 /usr/include/wx-3.0/wx/spinctrl.h
+	"wx/defs.h"
+	"wx/spinbutt.h"
+	"wx/msw/spinctrl.h"
+	"wx/os2/spinctrl.h"
+	"wx/gtk/spinctrl.h"
+	"wx/gtk1/spinctrl.h"
+	"wx/generic/spinctlg.h"
+
+1491890964 /usr/include/wx-3.0/wx/spinbutt.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/event.h"
+	"wx/range.h"
+	"wx/univ/spinbutt.h"
+	"wx/msw/spinbutt.h"
+	"wx/motif/spinbutt.h"
+	"wx/gtk/spinbutt.h"
+	"wx/gtk1/spinbutt.h"
+	"wx/osx/spinbutt.h"
+	"wx/cocoa/spinbutt.h"
+	"wx/os2/spinbutt.h"
+
+1491890964 /usr/include/wx-3.0/wx/range.h
+	"wx/defs.h"
+
+1491890964 /usr/include/wx-3.0/wx/gtk/spinbutt.h
+
+1491890964 /usr/include/wx-3.0/wx/gtk/spinctrl.h
+
+1491890964 /usr/include/wx-3.0/wx/generic/spinctlg.h
+	"wx/compositewin.h"
+	"wx/textctrl.h"
+
+1491890964 /usr/include/wx-3.0/wx/compositewin.h
+	"wx/window.h"
+	"wx/containr.h"
 

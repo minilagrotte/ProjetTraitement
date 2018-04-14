@@ -66,6 +66,12 @@ void FrameOutil::InitButton(){
     boutonSeuil->SetPosition(wxPoint(boutonRotation->GetSize().GetWidth()*2,boutonRotation->GetSize().GetHeight()));
     delete im;
     delete bitmapp;
+    im = new wxImage(wxT("./Trame.jpg"));
+    bitmapp = new wxBitmap(*im);
+    wxBitmapButton* boutonTrame = new wxBitmapButton(panel,ID_TRAMAGE,*bitmapp);
+    boutonTrame->SetPosition(wxPoint(boutonRotation->GetSize().GetWidth()*3,boutonRotation->GetSize().GetHeight()));
+    delete im;
+    delete bitmapp;
 }
 
 void FrameOutil::onPresse(wxCommandEvent& event){
@@ -82,4 +88,5 @@ BEGIN_EVENT_TABLE(FrameOutil,wxFrame)
     EVT_BUTTON(ID_Negatif,FrameOutil::onPresse)
     EVT_BUTTON(ID_Desaturate,FrameOutil::onPresse)
     EVT_BUTTON(ID_Seuil,FrameOutil::onPresse)
+    EVT_BUTTON(ID_TRAMAGE,FrameOutil::onPresse)
 END_EVENT_TABLE()

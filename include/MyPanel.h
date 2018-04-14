@@ -24,12 +24,14 @@ public:
     void OnRotate90Main();
     void OnPosterize();
     void OnHistogramme();
+    void OnTrame();
     void OnMouseLeftDown(wxMouseEvent& event);
     void OnMouseLeftUP(wxMouseEvent& event);
     void onMouseMov(wxMouseEvent& event);
     void drawAction(wxPaintDC& dc);
 
     MyFrame* frame;
+    int outilCourrant;
 
     void undoDraw();
 
