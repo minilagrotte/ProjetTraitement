@@ -6,6 +6,7 @@
 MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,MyApp* ap)
 : wxFrame(NULL, wxID_ANY, title, pos, size),app(ap){
     m_panel = new MyPanel(this);
+    m_panel->frame = this;
 
     Center();
     //---------------------------------------------------------------------------------------------------
@@ -242,5 +243,10 @@ void MyFrame::OnClose(wxCloseEvent& event)
             app->Exit();
         }
     }
+}
+
+wxColor MyFrame::getCurrentColor()
+{
+    return app->getCurrentColor();//m_panel->setColorCurrentPen(color);
 }
 

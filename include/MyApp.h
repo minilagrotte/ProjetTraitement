@@ -13,6 +13,7 @@ class MyApp: public wxApp
 public:
 	virtual bool OnInit();
 	void action(wxCommandEvent& event);
+	wxColor getCurrentColor();
 private:
     MyFrame* frame;
     FrameOutil* frameOutil;

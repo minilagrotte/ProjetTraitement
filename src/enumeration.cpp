@@ -22,5 +22,6 @@ enum	// énumération. Elle gère la numérotation automatiquement
 	ID_Histogramme,
 	ID_CtrlZ,
 	ID_OutilDefaut,
-	ID_Trait
+	ID_Trait,
+	ID_ColorSelection
 };

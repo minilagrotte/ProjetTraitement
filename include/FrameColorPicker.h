@@ -13,6 +13,8 @@ class FrameColorPicker : public wxFrame
     public:
         FrameColorPicker(const wxString& title, const wxPoint& pos, const wxSize& size, MyApp* app_);
         virtual ~FrameColorPicker();
+        wxColor getColor();
+        wxColor getCurrentColor();
 
         wxColourPickerCtrl* colorPicker;
     protected:

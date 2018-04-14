@@ -4,6 +4,8 @@
 #include "MyThresholdDialog.h"
 #include "Trait.h"
 //////////////////Constructeur ///////////////////////////      //voir memoryDC pour calque
+#include "MyFrame.h"
+
 MyPanel::MyPanel(wxWindow *parent)
 : wxPanel(parent) {
     Bind(wxEVT_PAINT, &MyPanel::OnPaint, this) ;
@@ -139,10 +141,11 @@ bool MyPanel::isImage(){
 }
 
 void MyPanel::OnMouseLeftDown(wxMouseEvent& event){
-    if(!mouseLeftDown){
+    if(!mouseLeftDown && isImage()){
         if(actions.back() == nullptr || actions.back()->finConstruction){  //dans le cas ou il n'y pas de forme dessiner
                                                                         //ou que la dernière de la liste est construite
             Trait* t = new Trait(event.GetPosition(),event.GetPosition());
+            currentPen.SetColour(frame->getCurrentColor());
             t->setPen(currentPen);
             actions.push_back(t);//on construit un objet trait
             actions.back()->onLeftDown(event.GetPosition());
@@ -182,3 +185,4 @@ void MyPanel::undoDraw(){
         actions.pop_back();
     Refresh();
 }
+

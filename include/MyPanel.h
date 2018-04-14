@@ -4,6 +4,7 @@
 #include <list>
 #include "MyImage.h"
 #include "Forme.h"
+class MyFrame;
 
 class MyPanel: public wxPanel
 {
@@ -27,6 +28,8 @@ public:
     void OnMouseLeftUP(wxMouseEvent& event);
     void onMouseMov(wxMouseEvent& event);
     void drawAction(wxPaintDC& dc);
+
+    MyFrame* frame;
 
     void undoDraw();
 

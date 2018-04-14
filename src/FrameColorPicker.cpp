@@ -1,4 +1,5 @@
 #include "FrameColorPicker.h"
+#include "enumeration.cpp"
 
 FrameColorPicker::FrameColorPicker(const wxString& title, const wxPoint& pos, const wxSize& size, MyApp* app_)
 : app(app_),wxFrame(NULL, wxID_ANY, title, pos, size)
@@ -10,3 +11,8 @@ FrameColorPicker::~FrameColorPicker()
 {
     //dtor
 }
+wxColor FrameColorPicker::getCurrentColor()
+{
+    return this->colorPicker->GetColour();
+}
+

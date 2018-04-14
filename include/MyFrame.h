@@ -10,6 +10,7 @@ class MyFrame: public wxFrame
 public:
 	MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size,MyApp* ap);
     void OnProcess(wxCommandEvent& event);
+    wxColor getCurrentColor();
 private:
 	void OnHello(wxCommandEvent& event);
 	void OnExit(wxCommandEvent& event);
