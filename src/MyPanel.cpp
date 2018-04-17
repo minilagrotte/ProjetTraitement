@@ -45,8 +45,35 @@ void MyPanel::OnPaint(wxPaintEvent &WXUNUSED(event)){
 }
 
 void MyPanel::OnSaveFile(wxString fileName){
-    m_bitmap.SaveFile(fileName,wxBITMAP_TYPE_JPEG);
-    //wxLogMessage(wxT("Je suis sauvegarde"));
+
+    frame->SetFocus();
+    sleep(1);//permet a la fenetre de selection d'emplacement de sauvegarde de se fermer
+    int x,y,w,h;
+    frame->GetScreenPosition(&x,&y);
+    frame->GetSize(&w,&h);
+    wxScreenDC screenDC;
+    //wxCoord screendWidth, screenHeight;
+    //screenDC.GetSize(&screendWidth, &screenHeight);
+    wxBitmap maSauvegarde(w, h);
+    wxMemoryDC memDC;
+    memDC.SelectObject(maSauvegarde);
+    memDC.Blit(0,0,w,h,&screenDC,x,y);
+    memDC.SelectObject(wxNullBitmap);
+
+    maSauvegarde.SaveFile(fileName,wxBITMAP_TYPE_JPEG);
+    m_bitmap.SaveFile(fileName+"_sans_peinture",wxBITMAP_TYPE_JPEG);
+
+    /////////example de screenshot de l'ecran entier///////////
+/*
+    wxScreenDC dcScreen;
+    wxCoord screenWidth, screenHeight;
+    dcScreen.GetSize(&screenWidth, &screenHeight);
+    wxBitmap screenshot(screenWidth, screenHeight, -1);
+    wxMemoryDC mmdc;
+    mmdc.SelectObject(screenshot);
+    mmdc.Blit(0,0,screenWidth,screenHeight,&dcScreen,0,0);
+    mmdc.SelectObject(wxNullBitmap);
+    screenshot.SaveFile("screenshot.jpeg", wxBITMAP_TYPE_JPEG);*/
 
 }
 

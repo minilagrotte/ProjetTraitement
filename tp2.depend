@@ -1791,7 +1791,7 @@
 1523709496 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyImage.cpp
 	"MyImage.h"
 
-1523724385 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
+1523993389 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/MyPanel.cpp
 	"MyPanel.h"
 	"enumeration.cpp"
 	"MyRotateDialog.h"
@@ -1895,11 +1895,11 @@
 1521478189 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/User.h
 	<wx/colour.h>
 
-1523723025 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameColorPicker.cpp
+1523724742 source:/users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/src/FrameColorPicker.cpp
 	"FrameColorPicker.h"
 	"enumeration.cpp"
 
-1523724012 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/FrameColorPicker.h
+1523724769 /users/info/etu-s4/rueth/M4105C/projet/ProjetTraitement/include/FrameColorPicker.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 	<wx/clrpicker.h>

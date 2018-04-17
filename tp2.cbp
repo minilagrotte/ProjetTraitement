@@ -40,7 +40,6 @@
 			<Add option="`wx-config --libs`" />
 		</Linker>
 		<Unit filename="include/Crayon.h" />
-		<Unit filename="include/DrawingTool.h" />
 		<Unit filename="include/Forme.h" />
 		<Unit filename="include/FrameColorPicker.h" />
 		<Unit filename="include/FrameOutil.h" />
@@ -50,11 +49,8 @@
 		<Unit filename="include/MyPanel.h" />
 		<Unit filename="include/MyRotateDialog.h" />
 		<Unit filename="include/MyThresholdDialog.h" />
-		<Unit filename="include/ToolCircle.h" />
 		<Unit filename="include/Trait.h" />
-		<Unit filename="include/User.h" />
 		<Unit filename="src/Crayon.cpp" />
-		<Unit filename="src/DrawingTool.cpp" />
 		<Unit filename="src/Forme.cpp" />
 		<Unit filename="src/FrameColorPicker.cpp" />
 		<Unit filename="src/FrameOutil.cpp" />
@@ -64,9 +60,7 @@
 		<Unit filename="src/MyPanel.cpp" />
 		<Unit filename="src/MyRotateDialog.cpp" />
 		<Unit filename="src/MyThresholdDialog.cpp" />
-		<Unit filename="src/ToolCircle.cpp" />
 		<Unit filename="src/Trait.cpp" />
-		<Unit filename="src/User.cpp" />
 		<Unit filename="src/enumeration.cpp" />
 		<Extensions>
 			<code_completion />
